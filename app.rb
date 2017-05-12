@@ -1,10 +1,10 @@
 require 'rspotify'
 require 'pry-byebug'
-require './artists.rb'
-require './secret.rb'
+require './artists'
+require './secret'
 
 client_id = Secret::ID
-client_token = Secret::Token
+client_token = Secret::TOKEN
 RSpotify::authenticate(client_id, client_token)
 
 artists = Artist::ARTISTS
